@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #4a006e, #000000); /* Gradiente roxo e preto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bloco {
+    border: 1px solid #4907a0; /* Cor de borda roxa */
+    border-radius: 12px;
+    width: 350px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fundo escuro da div */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Efeito de luz branca ao redor */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.links {
+    padding: 0;
+    margin-top: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    width: 100%;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4907a0; /* Cor roxa */
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+li a:hover {
+    background-color: #8f42c2; /* Cor roxa mais clara no hover */
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Sombra branca no hover */
+}
+
+.bloco:hover {
+    transform: scale(1.05); /* Efeito de zoom na div */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Aumenta o brilho ao passar o mouse */
+}
